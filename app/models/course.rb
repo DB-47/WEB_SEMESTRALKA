@@ -4,7 +4,7 @@ class Course < ApplicationRecord
 
   has_many :teacher_assignments
   has_many :student_assignments
-  has_many :lessons
+  has_many :lessons, dependent: :destroy
 
   enumerize :language, in: [:czech, :english], default: :czech
   enumerize :study_type, in: [:full_time, :part_time], default: :full_time

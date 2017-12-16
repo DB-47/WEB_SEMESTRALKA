@@ -10,6 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171215115913) do
+
+  create_table "buildings", force: :cascade do |t|
+    t.string "title"
+    t.string "code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "courses", force: :cascade do |t|
+    t.string "title"
+    t.string "code"
+    t.string "language"
+    t.string "study_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.integer "duration"
+    t.integer "course_id"
+    t.integer "teacher_id"
+    t.integer "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_lessons_on_course_id"
+    t.index ["room_id"], name: "index_lessons_on_room_id"
+    t.index ["teacher_id"], name: "index_lessons_on_teacher_id"
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.string "title"
+    t.string "code"
+    t.integer "building_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["building_id"], name: "index_rooms_on_building_id"
+  end
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
