@@ -3,7 +3,11 @@
 one:
   title: MyString
   code: MyString
+  language: MyString
+  study_type: MyString
 
 two:
   title: MyString
   code: MyString
+  language: MyString
+  study_type: MyString

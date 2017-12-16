@@ -3,7 +3,9 @@
 one:
   title: MyString
   code: MyString
+  building: one
 
 two:
   title: MyString
   code: MyString
+  building: two
