@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  start_at: 2017-12-16 15:34:10
-  end_at: 2017-12-16 15:34:10
+  start_at: 2017-12-17 12:40:34
+  end_at: 2017-12-17 12:40:34
   duration: 1
   course: one
-  teacher: 
+  teacher: one
   room: one
 
 two:
-  start_at: 2017-12-16 15:34:10
-  end_at: 2017-12-16 15:34:10
+  start_at: 2017-12-17 12:40:34
+  end_at: 2017-12-17 12:40:34
   duration: 1
   course: two
-  teacher: 
+  teacher: two
   room: two

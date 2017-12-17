@@ -6,7 +6,7 @@
     <%= f.input :end_at %>
     <%= f.input :duration %>
     <%= f.association :course %>
-    <%= f.association :teachers,include_blank: false, as: :radio_buttons, label_method: lambda {|teacher| "#{teacher.first_name} #{teacher.last_name}"} %>
+    <%= f.association :teacher %>
     <%= f.association :room %>
   </div>
 

@@ -17,10 +17,10 @@
       <tr>
         <td><%= room.title %></td>
         <td><%= room.code %></td>
-        <td><%= room.building.title %></td>
-        <td><%= link_to 'Show', room %></td>
-        <td><%= link_to 'Edit', edit_room_path(room) %></td>
-        <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= room.building %></td>
+        <td><%= button_to 'Show', room, method: :get %></td>
+        <td><%= button_to 'Edit', edit_room_path(room.id), :method => :get %></td>
+        <td><%= button_to 'Destroy', room, method: :delete, :onclick => "return confirm('Are you sure you want to delete this room?')" %></td>
       </tr>
     <% end %>
   </tbody>

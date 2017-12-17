@@ -20,9 +20,9 @@
         <td><%= student.last_name %></td>
         <td><%= student.email %></td>
         <td><%= student.study_type %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show', student, method: :get %></td>
+        <td><%= button_to 'Edit', edit_student_path(student.id), :method => :get %></td>
+        <td><%= button_to 'Destroy', student, method: :delete, :onclick => "return confirm('Are you sure you want to delete this student?')" %></td>
       </tr>
     <% end %>
   </tbody>

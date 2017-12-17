@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'enumerize', '~> 2.1', '>= 2.1.2'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 
 # Use Capistrano for deployment

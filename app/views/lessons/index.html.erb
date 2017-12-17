@@ -22,11 +22,11 @@
         <td><%= lesson.end_at %></td>
         <td><%= lesson.duration %></td>
         <td><%= lesson.course %></td>
-        <td><%= lesson.teacher.first_name %></td>
+        <td><%= lesson.teacher %></td>
         <td><%= lesson.room %></td>
-        <td><%= link_to 'Show', lesson %></td>
-        <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
-        <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show', lesson, method: :get %></td>
+        <td><%= button_to 'Edit', edit_lesson_path(lesson.id), :method => :get %></td>
+        <td><%= button_to 'Destroy', lesson, method: :delete, :onclick => "return confirm('Are you sure you want to delete this lesson?')" %></td>
       </tr>
     <% end %>
   </tbody>
