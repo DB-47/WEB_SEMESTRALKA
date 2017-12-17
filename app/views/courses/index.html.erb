@@ -22,7 +22,7 @@
         <td><%= course.study_type %></td>
         <td><%= button_to 'Show', course, method: :get %></td>
         <td><%= button_to 'Edit', edit_course_path(course.id), :method => :get %></td>
-        <td><%= button_to 'Destroy', course, method: :delete, :onclick => "return confirm('Are you sure you want to delete this teacher?')" %></td>
+        <td><%= button_to 'Destroy', course, method: :delete, :onclick => "return confirm('Are you sure you want to delete this teacher and all his/her lessons?')" %></td>
       </tr>
     <% end %>
   </tbody>

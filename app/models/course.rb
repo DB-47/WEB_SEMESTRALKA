@@ -2,7 +2,7 @@ class Course < ApplicationRecord
 
   extend Enumerize
 
-  has_many :teacher_assignments
+  has_many :teacher_assignments,
   has_many :student_assignments
   has_many :lessons, dependent: :destroy
 
