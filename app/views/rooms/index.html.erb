@@ -17,7 +17,7 @@
       <tr>
         <td><%= room.title %></td>
         <td><%= room.code %></td>
-        <td><%= room.building %></td>
+        <td><%= room.building.title %></td>
         <td><%= link_to 'Show', room %></td>
         <td><%= link_to 'Edit', edit_room_path(room) %></td>
         <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>

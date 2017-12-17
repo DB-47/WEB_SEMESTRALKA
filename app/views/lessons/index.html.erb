@@ -22,7 +22,7 @@
         <td><%= lesson.end_at %></td>
         <td><%= lesson.duration %></td>
         <td><%= lesson.course %></td>
-        <td><%= lesson.teacher %></td>
+        <td><%= lesson.teacher.first_name %></td>
         <td><%= lesson.room %></td>
         <td><%= link_to 'Show', lesson %></td>
         <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
